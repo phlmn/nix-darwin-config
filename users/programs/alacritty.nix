@@ -29,13 +29,13 @@
     font = {
       # Normal (roman) font face
       normal = {
-        family = "MesloLGM Nerd Font";
+        family = "MesloLGS NF";
         style = "Regular";
       };
 
       # Bold font face
       bold = {
-        family = "MesloLGM Nerd Font";
+        family = "MesloLGS NF";
 
         # The `style` can be specified to pick a specific face.
         style = "Bold";
@@ -43,12 +43,16 @@
 
       # Italic font face
       italic = {
-        family = "MesloLGM Nerd Font";
+        family = "MesloLGS NF";
         style = "Italic";
       };
 
       # Point size
       size = 14.0;
+
+      offset = {
+        y = 3; # increase line height
+      };
 
       # Thin stroke font rendering (macOS only)
       #

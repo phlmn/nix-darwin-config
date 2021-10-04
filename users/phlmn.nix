@@ -5,6 +5,7 @@
     pkgs.lima
     pkgs.tilt
     pkgs.azure-cli
+    pkgs.meslo-lgs-nf
   ];
 
   programs.git = {
