@@ -33,6 +33,10 @@
         ignorecase = "false";
       };
 
+      pull = {
+        rebase = false;
+      };
+
       "merge \"npm-merge-driver\"" = {
         name = "automatically merge npm lockfiles";
         driver = "npx npm-merge-driver merge %A %O %B %P";
