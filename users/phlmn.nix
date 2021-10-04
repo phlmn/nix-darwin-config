@@ -4,6 +4,7 @@
   home.packages = [
     pkgs.lima
     pkgs.tilt
+    pkgs.azure-cli
   ];
 
   programs.git = {
