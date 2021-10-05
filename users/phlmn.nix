@@ -161,6 +161,10 @@
       dev = "$HOME/Coding";
       dl  = "$HOME/Downloads";
     };
+
+    sessionVariables = {
+      EDITOR = "nvim";
+    };
   };
 
   programs.starship = {
