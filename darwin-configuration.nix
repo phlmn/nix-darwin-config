@@ -19,6 +19,7 @@
       pkgs.tldr
       pkgs.mas
       pkgs.kubectl
+      pkgs.kubernetes-helm
       pkgs.cloc
       pkgs.ktlint
       pkgs.minicom
