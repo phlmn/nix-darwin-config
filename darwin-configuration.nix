@@ -34,6 +34,7 @@
       pkgs.nodePackages.serve
       pkgs.rustup
       pkgs.fd
+      pkgs.jq
     ];
 
   # Use a custom configuration.nix location.
