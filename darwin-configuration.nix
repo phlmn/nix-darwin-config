@@ -35,6 +35,7 @@
       pkgs.rustup
       pkgs.fd
       pkgs.jq
+      pkgs.yq
     ];
 
   # Use a custom configuration.nix location.
