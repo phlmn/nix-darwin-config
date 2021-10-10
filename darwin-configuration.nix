@@ -37,6 +37,7 @@
       pkgs.fd
       pkgs.jq
       pkgs.yq
+      pkgs.gh
     ];
 
   # Use a custom configuration.nix location.
