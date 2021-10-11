@@ -139,6 +139,9 @@
 
       # Always use color output for `ls`
       alias ls="command ls ''${colorflag}"
+
+      # More colors!!!111
+      export TERM='xterm-256color';
     '';
 
     shellAliases = {
