@@ -110,6 +110,7 @@
       "intellij-idea"
       "forticlient-vpn"
       "docker"
+      "drawio"
     ];
 
     masApps = {
