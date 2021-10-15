@@ -38,6 +38,7 @@
       pkgs.jq
       pkgs.yq
       pkgs.gh
+      pkgs.mosquitto
     ];
 
   # Use a custom configuration.nix location.
@@ -125,4 +126,11 @@
   };
 
   home-manager.users.phlmn = import ./users/phlmn.nix;
+
+  launchd.user.agents.mosquitto = {
+    serviceConfig.ProgramArguments = [ "${pkgs.mosquitto}/bin/mosquitto" ];
+
+    serviceConfig.KeepAlive = true;
+    serviceConfig.RunAtLoad = true;
+  };
 }
