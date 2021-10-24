@@ -5,40 +5,40 @@
 
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
-  environment.systemPackages =
-    [
-      pkgs.vim
-      pkgs.postgresql_13
-      pkgs.redis
-      pkgs.git
-      pkgs.htop
-      pkgs.tmux
-      pkgs.zsh
-      pkgs.neovim
-      pkgs.ripgrep
-      pkgs.tldr
-      pkgs.mas
-      pkgs.kubectl
-      pkgs.kubernetes-helm
-      pkgs.cloc
-      pkgs.ktlint
-      pkgs.minicom
-      pkgs.nodejs-slim-14_x
-      pkgs.nodePackages.npm
-      pkgs.pandoc
-      pkgs.packer
-      pkgs.python3
-      pkgs.terraform
-      pkgs.tree
-      pkgs.zsh-syntax-highlighting
-      pkgs.zsh-autosuggestions
-      pkgs.nodePackages.serve
-      pkgs.rustup
-      pkgs.fd
-      pkgs.jq
-      pkgs.yq
-      pkgs.gh
-      pkgs.mosquitto
+  environment.systemPackages = with pkgs; [
+      vim
+      postgresql_13
+      redis
+      git
+      htop
+      tmux
+      zsh
+      neovim
+      ripgrep
+      tldr
+      mas
+      kubectl
+      kubernetes-helm
+      cloc
+      ktlint
+      minicom
+      nodejs-slim-14_x
+      nodePackages.npm
+      pandoc
+      packer
+      python3
+      terraform
+      tree
+      zsh-syntax-highlighting
+      zsh-autosuggestions
+      nodePackages.serve
+      rustup
+      fd
+      jq
+      yq
+      gh
+      mosquitto
+      argocd
     ];
 
   # Use a custom configuration.nix location.
