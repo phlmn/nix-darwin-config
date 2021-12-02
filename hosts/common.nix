@@ -31,6 +31,7 @@
 
     nodejs-slim-14_x
     nodePackages.npm
+    nodePackages.yarn
 
     python3
     jq
