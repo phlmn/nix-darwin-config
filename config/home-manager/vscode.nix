@@ -4,7 +4,7 @@
     userSettings = {
       # Visuals
       "workbench.colorTheme" = "One Dark Pro";
-      "workbench.iconTheme" = "seti";
+      "workbench.iconTheme" = "vs-seti";
 
       # Language specific settings
       "[javascript]" = {
@@ -45,6 +45,7 @@
         "**/dist" = true;
         "**/node_modules" = true;
         "**/target" = true;
+        "**/coverage/lcov-report" = true;
       };
 
       # Misc

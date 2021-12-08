@@ -20,7 +20,7 @@
     rustup
     gh
     argocd
-    # vscode
+    vscode
     syncthing
     lima
     tilt
