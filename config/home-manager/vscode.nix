@@ -26,7 +26,7 @@
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
       "[markdown]" = {
-        "editor.defaultFormatter": "esbenp.prettier-vscode";
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
 
       # Generally ignored files (e.g. are not displayed in the explorer)
@@ -51,76 +51,66 @@
       "terminal.integrated.scrollback" = 20000;
       "markdown-preview-enhanced.breakOnSingleNewLine" = false;
     };
-  };
 
-  keybindings = [
-    {
-        "key" = "cmd+[IntlBackslash]";
-        "command" = "workbench.action.terminal.toggleTerminal";
-    }
-    {
-        "key" = "ctrl+[Period]";
-        "command" = "editor.action.marker.next";
-        "when" = "editorFocus";
-    }
-    {
-        "key" = "cmd+k n";
-        "command" = "-editor.action.marker.next";
-        "when" = "editorFocus";
-    }
-    {
-        "key" = "ctrl+shift+[Period]";
-        "command" = "editor.action.marker.prev";
-        "when" = "editorFocus";
-    }
-    {
-        "key" = "cmd+k p";
-        "command" = "-editor.action.marker.prev";
-        "when" = "editorFocus";
-    }
-    {
-        "key" = "cmd+0";
-        "command" = "-workbench.action.focusSideBar";
-    }
-    {
-        "key" = "cmd+0";
-        "command" = "workbench.action.focusSideBar";
-        "when" = "editorFocus";
-    }
-    {
-        "key" = "cmd+0";
-        "command" = "workbench.action.focusActiveEditorGroup";
-        "when" = "!editorFocus";
-    }
-    {
-        "key" = "ctrl+alt+down";
-        "command" = "markdown.extension.onMoveLineDown";
-        "when" = "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'";
-    }
-    {
-        "key" = "alt+down";
-        "command" = "-markdown.extension.onMoveLineDown";
-        "when" = "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'";
-    }
-    {
-        "key" = "ctrl+alt+up";
-        "command" = "markdown.extension.onMoveLineUp";
-        "when" = "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'";
-    }
-    {
-        "key" = "alt+up";
-        "command" = "-markdown.extension.onMoveLineUp";
-        "when" = "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'";
-    }
-    {
-        "command" = "footsteps.skipBack";
-        "key" = "ctrl+alt+left";
-        "mac" = "ctrl+alt+left";
-    }
-    {
-        "command" = "footsteps.skipForwards";
-        "key" = "ctrl+alt+right";
-        "mac" = "ctrl+alt+right";
-    }
-  ];
+    keybindings = [
+      {
+          "key" = "cmd+[IntlBackslash]";
+          "command" = "workbench.action.terminal.toggleTerminal";
+      }
+      {
+          "key" = "ctrl+[Period]";
+          "command" = "editor.action.marker.next";
+          "when" = "editorFocus";
+      }
+      {
+          "key" = "cmd+k n";
+          "command" = "-editor.action.marker.next";
+          "when" = "editorFocus";
+      }
+      {
+          "key" = "ctrl+shift+[Period]";
+          "command" = "editor.action.marker.prev";
+          "when" = "editorFocus";
+      }
+      {
+          "key" = "cmd+k p";
+          "command" = "-editor.action.marker.prev";
+          "when" = "editorFocus";
+      }
+      {
+          "key" = "cmd+0";
+          "command" = "-workbench.action.focusSideBar";
+      }
+      {
+          "key" = "cmd+0";
+          "command" = "workbench.action.focusSideBar";
+          "when" = "editorFocus";
+      }
+      {
+          "key" = "cmd+0";
+          "command" = "workbench.action.focusActiveEditorGroup";
+          "when" = "!editorFocus";
+      }
+      {
+          "key" = "ctrl+alt+down";
+          "command" = "markdown.extension.onMoveLineDown";
+          "when" = "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'";
+      }
+      {
+          "key" = "alt+down";
+          "command" = "-markdown.extension.onMoveLineDown";
+          "when" = "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'";
+      }
+      {
+          "key" = "ctrl+alt+up";
+          "command" = "markdown.extension.onMoveLineUp";
+          "when" = "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'";
+      }
+      {
+          "key" = "alt+up";
+          "command" = "-markdown.extension.onMoveLineUp";
+          "when" = "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'";
+      }
+    ];
+  };
 }
