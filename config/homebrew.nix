@@ -3,7 +3,6 @@
     enable = true;
     cleanup = "zap";
     autoUpdate = true;
-    brewPrefix = "/opt/homebrew/bin/";
 
     taps = [
       "homebrew/cask"
