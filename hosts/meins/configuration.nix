@@ -5,7 +5,6 @@
     ../../profiles/desktop.nix
     ../../config/homebrew.nix
     ../../config/postgresql.nix
-    ../../config/redis.nix
     ../../modules/syncthing-darwin.nix
   ];
 
@@ -25,10 +24,10 @@
     };
 
     folders = {
-      "/Users/phlmn/.vscode/extensions" = {
-        id = "vscode_extensions";
-        devices = [ "meins" ];
-      };
+      # "/Users/phlmn/.vscode/extensions" = {
+      #   id = "vscode_extensions";
+      #   devices = [ "meins" ];
+      # };
     };
   };
 }
