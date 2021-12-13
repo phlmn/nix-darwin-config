@@ -25,6 +25,9 @@
     lima
     tilt
     azure-cli
+    ffmpeg
+    go
+    pkg-config
   ];
 
   users.users.phlmn = {
