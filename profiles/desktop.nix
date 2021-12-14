@@ -28,6 +28,7 @@
     ffmpeg
     go
     pkg-config
+    httpie
   ];
 
   users.users.phlmn = {
