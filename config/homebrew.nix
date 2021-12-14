@@ -45,6 +45,7 @@
       "hyperswitch"
       "mumble"
       "sublime-text"
+      "discord"
     ];
 
     masApps = {
