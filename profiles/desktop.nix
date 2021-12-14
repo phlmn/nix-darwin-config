@@ -40,6 +40,7 @@
   home-manager.users.phlmn = {
     imports = [
       ../config/home-manager.nix
+      ../config/home-manager/hammerspoon/default.nix
       ../config/home-manager/alacritty.nix
       ../config/home-manager/fonts.nix
       ../config/home-manager/fzf.nix
