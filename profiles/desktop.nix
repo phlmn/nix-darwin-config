@@ -29,7 +29,7 @@
     go
     pkg-config
     httpie
-    alembic
+    pipenv
   ];
 
   users.users.phlmn = {
