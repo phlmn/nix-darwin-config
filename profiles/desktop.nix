@@ -29,7 +29,6 @@
     go
     pkg-config
     httpie
-    pipenv
   ];
 
   users.users.phlmn = {

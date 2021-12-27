@@ -33,7 +33,10 @@
     nodePackages.npm
     nodePackages.yarn
 
-    python3
+    python39
+    python39Packages.pip
+    pipenv
+
     jq
     yq
   ];
