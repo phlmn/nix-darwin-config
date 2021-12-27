@@ -18,6 +18,8 @@
       unpublish = "!git push origin :$(git branch-name)";
     };
 
+    ignores = [ ".DS_Store" ]
+
     extraConfig = {
       core = {
         hooksPath = "~/.githooks";
