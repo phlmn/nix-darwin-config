@@ -20,7 +20,6 @@
 
     extraConfig = {
       core = {
-        excludesFile = "~/.gitignore";
         hooksPath = "~/.githooks";
         ignorecase = "false";
       };
