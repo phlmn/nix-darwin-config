@@ -8,15 +8,14 @@
           columns = 0;
           lines = 0;
         };
+
         padding = {
-          x = 8;
-          y = 8;
+          x = 6;
+          y = 4;
         };
 
         # Spread additional padding evenly around the terminal content.
         dynamic_padding = true;
-
-        decorations = "buttonless";
 
         # Allow terminal applications to change Alacritty's window title.
         dynamic_title = true;
