@@ -52,6 +52,9 @@
       # Misc
       "terminal.integrated.scrollback" = 20000;
       "markdown-preview-enhanced.breakOnSingleNewLine" = false;
+
+      # Rust
+      "rust-analyzer.inlayHints.enable" = false;
     };
 
     keybindings = [
