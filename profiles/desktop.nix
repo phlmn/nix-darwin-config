@@ -9,6 +9,7 @@
   environment.systemPackages = with pkgs; [
     postgresql_13
     redis
+    ruby_3_1
     mas
     kubectl
     kubernetes-helm
