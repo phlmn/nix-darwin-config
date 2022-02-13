@@ -39,5 +39,7 @@
 
     jq
     yq
+
+    iperf
   ];
 }
