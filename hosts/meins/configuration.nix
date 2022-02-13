@@ -3,7 +3,6 @@
   imports = [
     <home-manager/nix-darwin>
     ../../profiles/desktop.nix
-    ../../config/homebrew.nix
     # ../../config/postgresql.nix
     ../../modules/syncthing-darwin.nix
   ];
