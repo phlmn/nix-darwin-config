@@ -14,6 +14,8 @@
   system.stateVersion = 4;
 
   environment.systemPackages = with pkgs; [
+    hydra-check
+
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
