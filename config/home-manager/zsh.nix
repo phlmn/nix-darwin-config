@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   programs.zsh = {
     enable = true;
@@ -16,6 +17,14 @@
         "history"
       ];
     };
+
+    plugins = [
+      {
+        name = "nix-shell";
+        file = "nix-shell.plugin.zsh";
+        src = "${pkgs.zsh-nix-shell.}/share/zsh-nix-shell";
+      }
+    ];
 
     initExtra = ''
       # Detect which `ls` flavor is in use

@@ -17,6 +17,7 @@
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
+    zsh-nix-shell
 
     vim
     git
