@@ -94,6 +94,7 @@
       "sublime-text"
       "discord"
       "rawtherapee"
+      "raycast"
     ];
 
     masApps = {
