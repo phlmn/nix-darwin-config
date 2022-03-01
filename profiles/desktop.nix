@@ -95,6 +95,7 @@
       "discord"
       "rawtherapee"
       "raycast"
+      "keybase"
     ];
 
     masApps = {
