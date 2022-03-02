@@ -96,6 +96,7 @@
       "rawtherapee"
       "raycast"
       "keybase"
+      "keeweb"
     ];
 
     masApps = {
