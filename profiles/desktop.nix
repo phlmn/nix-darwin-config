@@ -105,7 +105,6 @@
       "contexts"
       "flux"
       "hammerspoon"
-      "hyperswitch"
       "karabiner-elements"
       "raycast"
 
