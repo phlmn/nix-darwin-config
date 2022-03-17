@@ -98,6 +98,7 @@
       "keybase"
       "keeweb"
       "azure-data-studio"
+      "contexts"
     ];
 
     masApps = {
