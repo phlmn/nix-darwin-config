@@ -8,29 +8,39 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
+    # Collab
+    syncthing
+
+    # Databases
     postgresql_13
     redis
     ruby_3_1
-    mas
+
+    # Dev
+    argocd
+    azure-cli
+    gh
+    go
+    httpie
+    ktlint
     kubectl
     kubernetes-helm
-    ktlint
-    minicom
-    pandoc
-    terraform
-    nodePackages.serve
-    rustup
-    gh
-    argocd
-    vscode
-    syncthing
     lima
+    minicom
+    rustup
+    terraform
     tilt
-    azure-cli
+    vscode
+
+    # Mac Utilities
+    mas
+
+    # Office
+    pandoc
+
+    # Tools
     ffmpeg
-    go
-    pkg-config
-    httpie
+    nodePackages.serve
   ];
 
   users.users.phlmn = {
@@ -57,54 +67,72 @@
 
   homebrew = {
     casks = [
-      "google-chrome"
-      "alacritty"
-      "hammerspoon"
-      "enpass"
-      "alfred"
-
-      "android-studio"
-      "bartender"
-      "jitsi-meet"
-      "libreoffice"
-      "logitech-options"
-      "sketch"
-      "spotify"
-      "notion"
-      "vlc"
-      "the-unarchiver"
-      "postico"
-      "telegram"
-      "signal"
-      "flux"
-      "appcleaner"
-      "kicad"
-      "karabiner-elements"
-      "microsoft-teams"
-      "insomnia"
+      # Browsers
       "firefox"
-      "autodesk-fusion360"
-      "intellij-idea"
-      "forticlient-vpn"
-      "docker"
-      "drawio"
-      "bartender"
-      "hyperswitch"
-      "mumble"
-      "sublime-text"
+      "google-chrome"
+
+      # Collab & Messaging
       "discord"
-      "rawtherapee"
-      "raycast"
+      "jitsi-meet"
       "keybase"
-      "keeweb"
+      "microsoft-teams"
+      "mumble"
+      "signal"
+      "telegram"
+
+      # Dev
+      "alacritty"
+      "android-studio"
       "azure-data-studio"
+      "docker"
+      "insomnia"
+      "intellij-idea"
+      "postico"
+      "sublime-text"
+
+      # Drivers etc.
+      "logitech-options"
+
+      # Graphics
+      "drawio"
+      "rawtherapee"
+      "sketch"
+
+      # Mac Utilities
+      "alfred"
+      "bartender"
+      "bartender"
       "contexts"
+      "flux"
+      "hammerspoon"
+      "hyperswitch"
+      "karabiner-elements"
+      "raycast"
+
+      # Making
+      "autodesk-fusion360"
+      "kicad"
+
+      # Media
+      "spotify"
+      "vlc"
+
+      # Office
+      "libreoffice"
+      "notion"
+
+      # Tools
+      "appcleaner"
+      "enpass"
+      "forticlient-vpn"
+      "keeweb"
+      "the-unarchiver"
     ];
 
     masApps = {
+      # Graphics
       "Affinity Designer" = 824171161;
       "Affinity Photo" = 824183456;
-      "Tyme 2" = 1063996724;
     };
   };
 }

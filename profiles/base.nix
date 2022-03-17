@@ -14,36 +14,43 @@
   system.stateVersion = 4;
 
   environment.systemPackages = with pkgs; [
-    hydra-check
-
-    zsh
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    zsh-nix-shell
-
-    vim
-    git
-    htop
-    tmux
-    fd
-    neovim
-    ripgrep
-    tldr
-    tree
+    # Dev
     cloc
-    nmap
+    git
 
+    # Node.js
     nodejs-slim-14_x
     nodePackages.npm
     nodePackages.yarn
 
+    # Nix
+    hydra-check
+
+    # Python
+    pipenv
     python39
     python39Packages.pip
-    pipenv
 
-    jq
-    yq
+    # OS Essentials
+    fd
+    htop
+    neovim
+    nmap
+    ripgrep
+    tmux
+    tree
+    vim
 
+    # Shell
+    zsh
+    zsh-autosuggestions
+    zsh-nix-shell
+    zsh-syntax-highlighting
+
+    # Tools
     iperf
+    jq
+    tldr
+    yq
   ];
 }
