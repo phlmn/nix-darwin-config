@@ -18,7 +18,14 @@
 
     # Dev
     argocd
-    azure-cli
+    (import (builtins.fetchTarball {
+      # Descriptive name to make the store path easier to identify
+      name = "nixos-unstable-with-working-azure-cli";
+      # Commit hash for last successful build of working azure-core (https://hydra.nixos.org/build/169891156#tabs-summary)
+      url = "https://github.com/nixos/nixpkgs/archive/7a4a3f2a73865c5930c38ed5541cf033c602b0ff.tar.gz";
+      # Hash obtained using `nix-prefetch-url --unpack <url>`
+      sha256 = "0mg0i2yzrqb56izb4c6xvdza7iwghhwhl488iwqhrfwqq99zvy4v";
+    }) {}).azure-cli
     gh
     go
     httpie
