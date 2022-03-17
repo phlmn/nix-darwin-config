@@ -97,6 +97,7 @@
       "raycast"
       "keybase"
       "keeweb"
+      "azure-data-studio"
     ];
 
     masApps = {
