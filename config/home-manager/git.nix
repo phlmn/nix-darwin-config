@@ -16,6 +16,9 @@
 
       # Delete the remote version of the current branch
       unpublish = "!git push origin :$(git branch-name)";
+
+      # Switch branches via fzf
+      fzf = "!git checkout \"$(git for-each-ref --format='%(refname:short)' refs/heads/ | fzf)\"";
     };
 
     ignores = [ ".DS_Store" ];
