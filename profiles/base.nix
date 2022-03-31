@@ -17,6 +17,7 @@
     # Dev
     cloc
     git
+    difftastic
 
     # Node.js
     nodejs-slim-14_x

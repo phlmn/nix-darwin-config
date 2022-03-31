@@ -33,6 +33,10 @@
         rebase = false;
       };
 
+      diff = {
+        external = "difft";
+      };
+
       "merge \"npm-merge-driver\"" = {
         name = "automatically merge npm lockfiles";
         driver = "npx npm-merge-driver merge %A %O %B %P";
