@@ -23,6 +23,7 @@
     nodejs-slim-14_x
     nodePackages.npm
     nodePackages.yarn
+    nodePackages.pnpm
 
     # Nix
     hydra-check
