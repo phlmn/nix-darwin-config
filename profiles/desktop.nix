@@ -48,6 +48,7 @@
     # Tools
     ffmpeg
     nodePackages.serve
+    rink
   ];
 
   users.users.phlmn = {
