@@ -1,8 +1,7 @@
 {
   homebrew = {
     enable = true;
-    cleanup = "zap";
-    autoUpdate = true;
+    cleanup = "uninstall";
 
     taps = [
       "homebrew/cask"
