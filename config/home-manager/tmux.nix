@@ -3,6 +3,7 @@
   programs.tmux = {
     enable = true;
     sensibleOnTop = true;
+    historyLimit = 20000;
 
     extraConfig = ''
       # Keep directory when creating new windows or panes
