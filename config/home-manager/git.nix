@@ -35,11 +35,24 @@
 
       diff = {
         external = "difft";
+        tool = "nvimdiff";
+      };
+
+      merge = {
+        tool = "nvimdiff";
       };
 
       "merge \"npm-merge-driver\"" = {
         name = "automatically merge npm lockfiles";
         driver = "npx npm-merge-driver merge %A %O %B %P";
+      };
+
+      difftool = {
+        prompt = true;
+      };
+
+      "difftool \"nvimdiff\"" = {
+        cmd = "nvim -d \"$LOCAL\" \"$REMOTE\"";
       };
     };
   };
