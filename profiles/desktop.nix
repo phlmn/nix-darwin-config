@@ -58,6 +58,8 @@
 
   home-manager.useGlobalPkgs = true;
   home-manager.users.phlmn = {
+    home.stateVersion = "22.05";
+
     imports = [
       ../config/home-manager.nix
       ../config/home-manager/hammerspoon/default.nix
@@ -118,7 +120,7 @@
 
       # Making
       "autodesk-fusion360"
-      "kicad"
+      # "kicad"
 
       # Media
       "spotify"
