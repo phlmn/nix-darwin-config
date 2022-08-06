@@ -76,6 +76,10 @@
   };
 
   homebrew = {
+    brews = [
+      "platformio"
+    ];
+
     casks = [
       # Browsers
       "firefox"
