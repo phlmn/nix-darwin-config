@@ -37,7 +37,6 @@
     rustup
     terraform
     tilt
-    vscode
 
     # Mac Utilities
     mas
@@ -103,6 +102,7 @@
       "intellij-idea"
       "postico"
       "sublime-text"
+      "visual-studio-code"
 
       # Drivers etc.
       "logitech-options"
