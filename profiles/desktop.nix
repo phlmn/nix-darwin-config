@@ -32,6 +32,7 @@
     ktlint
     kubectl
     kubernetes-helm
+    kubelogin
     lima
     minicom
     rustup
