@@ -1,7 +1,10 @@
 {
   homebrew = {
     enable = true;
-    cleanup = "uninstall";
+
+    onActivation = {
+      cleanup = "uninstall";
+    };
 
     taps = [
       "homebrew/cask"
