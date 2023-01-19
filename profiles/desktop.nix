@@ -141,6 +141,7 @@
       "forticlient-vpn"
       "keeweb"
       "the-unarchiver"
+      "balenaetcher"
     ];
 
     masApps = {
