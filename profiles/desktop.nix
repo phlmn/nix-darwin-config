@@ -70,7 +70,7 @@
       ../config/home-manager/neovim.nix
       ../config/home-manager/starship.nix
       ../config/home-manager/tmux.nix
-      ../config/home-manager/vscode.nix
+      ../config/home-manager/vscode/default.nix
       ../config/home-manager/zsh.nix
     ];
   };

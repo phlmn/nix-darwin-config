@@ -1,0 +1,44 @@
+{
+  "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.idea": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "markdown-preview-enhanced.breakOnSingleNewLine": false,
+  "rust-analyzer.inlayHints.enable": false,
+  "search.exclude": {
+    "**/.cache": true,
+    "**/.next": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/target": true
+  },
+  "terminal.integrated.scrollback": 20000,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "seti"
+}
