@@ -40,5 +40,15 @@
   },
   "terminal.integrated.scrollback": 20000,
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "seti"
+  "workbench.iconTheme": "seti",
+  "[python]": {
+    "editor.formatOnType": false
+  },
+  "python.autoComplete.extraPaths": ["__pypackages__/3.10/lib"],
+  "python.analysis.extraPaths": [
+    "__pypackages__/3.10/lib"
+  ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
