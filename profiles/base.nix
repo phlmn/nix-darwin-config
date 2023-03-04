@@ -18,6 +18,7 @@
     cloc
     git
     difftastic
+    pre-commit
 
     # Node.js
     nodejs-slim-14_x
