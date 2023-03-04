@@ -127,6 +127,7 @@
       # Office
       "libreoffice"
       "notion"
+      "obsidian"
 
       # Tools
       "appcleaner"
