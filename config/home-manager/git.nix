@@ -25,7 +25,6 @@
 
     extraConfig = {
       core = {
-        hooksPath = "~/.githooks";
         ignorecase = "false";
       };
 
