@@ -30,8 +30,10 @@
 
     # Python
     pipenv
-    python39
-    python39Packages.pip
+    python3
+    python3Packages.pip
+    poetry
+    pdm
 
     # OS Essentials
     fd
