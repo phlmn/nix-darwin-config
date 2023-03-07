@@ -65,6 +65,7 @@
       ../config/home-manager/tmux.nix
       ../config/home-manager/vscode/default.nix
       ../config/home-manager/zsh.nix
+      ../config/home-manager/fix-ctrl-cmd-down-bonk.nix
     ];
   };
 
