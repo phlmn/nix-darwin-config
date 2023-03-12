@@ -54,12 +54,6 @@
           y = 3; # increase line height
         };
 
-        # Thin stroke font rendering (macOS only)
-        #
-        # Thin strokes are suitable for retina displays, but for non-retina screens
-        # it is recommended to set `use_thin_strokes` to `false`.
-        use_thin_strokes = true;
-
         # If `true`, bold text is drawn using the bright color variants.
         draw_bold_text_with_bright_colors = true;
       };
