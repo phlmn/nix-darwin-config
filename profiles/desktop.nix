@@ -130,6 +130,7 @@
       "libreoffice"
       "notion"
       "obsidian"
+      "nextcloud"
 
       # Tools
       "appcleaner"
