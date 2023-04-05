@@ -135,6 +135,7 @@
       # Tools
       "appcleaner"
       "enpass"
+      "bitwarden"
       "forticlient-vpn"
       "keeweb"
       "the-unarchiver"
