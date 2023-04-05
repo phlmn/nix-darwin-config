@@ -17,6 +17,7 @@
     # Dev
     cloc
     git
+    gitAndTools.git-absorb
     difftastic
     pre-commit
 
