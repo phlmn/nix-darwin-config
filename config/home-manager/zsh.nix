@@ -57,6 +57,11 @@
 
       vim = "nvim";
       vi = "nvim";
+
+      # kubernetes etc
+      k = "kubectl";
+      kx = "kubectx";
+      tf = "terraform";
     };
 
     dirHashes = {
