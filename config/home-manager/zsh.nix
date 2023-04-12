@@ -67,7 +67,7 @@
     dirHashes = {
       # Shortcuts for popular locations
       mm  = "$HOME/Micromata";
-      dev = "$HOME/Coding";
+      dev = "$HOME/Developer";
       dl  = "$HOME/Downloads";
     };
 
