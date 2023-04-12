@@ -25,6 +25,7 @@
     ktlint
     kubectl
     kubernetes-helm
+    kubectx
     kubelogin
     lima
     minicom
