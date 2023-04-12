@@ -223,9 +223,6 @@
         ];
       };
 
-      # Send ESC (\x1b) before characters when alt is pressed.
-      alt_send_esc = false;
-
       # Key bindings
       #
       # Key bindings are specified as a list of objects. Each binding will specify a
