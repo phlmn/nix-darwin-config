@@ -18,8 +18,10 @@
     cloc
     git
     gitAndTools.git-absorb
+    git-crypt
     difftastic
     pre-commit
+    gnupg
 
     # Node.js
     nodejs-slim-14_x
