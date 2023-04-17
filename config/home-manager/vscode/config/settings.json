@@ -51,5 +51,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "window.title": "${rootName}${separator}${profileName}${separator}${activeEditorShort}",
   "editor.inlineSuggest.enabled": true
 }
