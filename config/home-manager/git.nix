@@ -24,6 +24,10 @@
     ignores = [ ".DS_Store" ];
 
     extraConfig = {
+      init = {
+        defaultBranch = "main";
+      };
+
       core = {
         ignorecase = "false";
       };
