@@ -112,7 +112,6 @@
       # Mac Utilities
       "alfred"
       "bartender"
-      "bartender"
       "contexts"
       "flux"
       "hammerspoon"
@@ -121,7 +120,6 @@
 
       # Making
       "autodesk-fusion360"
-      # "kicad"
 
       # Media
       "spotify"
