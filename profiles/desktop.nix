@@ -108,6 +108,7 @@
       "drawio"
       "rawtherapee"
       "sketch"
+      "figma"
 
       # Mac Utilities
       "alfred"
