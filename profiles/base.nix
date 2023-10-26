@@ -24,7 +24,7 @@
     gnupg
 
     # Node.js
-    nodejs-slim-14_x
+    nodejs-slim-18_x
     nodePackages.npm
     nodePackages.yarn
     nodePackages.pnpm
