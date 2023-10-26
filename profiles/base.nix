@@ -48,6 +48,7 @@
     tmux
     tree
     vim
+    openssl
 
     # Shell
     zsh
