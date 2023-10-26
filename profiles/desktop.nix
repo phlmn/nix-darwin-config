@@ -46,7 +46,7 @@
   ];
 
   users.users.phlmn = {
-    name = "Philipp";
+    name = "phlmn";
     home = "/Users/phlmn";
   };
 
