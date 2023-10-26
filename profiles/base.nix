@@ -22,12 +22,14 @@
     difftastic
     pre-commit
     gnupg
+    awscli2
 
     # Node.js
     nodejs-slim-18_x
     nodePackages.npm
     nodePackages.yarn
     nodePackages.pnpm
+    nodePackages.cdktf-cli
 
     # Nix
     hydra-check
