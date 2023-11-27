@@ -39,18 +39,20 @@
     "**/target": true
   },
   "terminal.integrated.scrollback": 20000,
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.iconTheme": "seti",
   "[python]": {
     "editor.formatOnType": false
   },
   "python.autoComplete.extraPaths": ["__pypackages__/3.10/lib"],
   "python.analysis.extraPaths": [
-    "__pypackages__/3.10/lib"
+    "__pypackages__/3.10/lib",
+    "__pypackages__/3.11/lib"
   ],
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.title": "${rootName}${separator}${profileName}${separator}${activeEditorShort}",
-  "editor.inlineSuggest.enabled": true
+  "editor.inlineSuggest.enabled": true,
+  "python.analysis.typeCheckingMode": "basic"
 }
