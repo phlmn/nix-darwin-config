@@ -39,7 +39,7 @@
     "**/target": true
   },
   "terminal.integrated.scrollback": 20000,
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Light",
   "workbench.iconTheme": "seti",
   "[python]": {
     "editor.formatOnType": false
@@ -54,5 +54,6 @@
   },
   "window.title": "${rootName}${separator}${profileName}${separator}${activeEditorShort}",
   "editor.inlineSuggest.enabled": true,
-  "python.analysis.typeCheckingMode": "basic"
+  "python.analysis.typeCheckingMode": "basic",
+  "terminal.integrated.fontSize": 13
 }
