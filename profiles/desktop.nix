@@ -32,6 +32,7 @@
     rustup
     terraform
     tilt
+    k9s
 
     # Mac Utilities
     mas
