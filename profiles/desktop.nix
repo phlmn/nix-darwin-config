@@ -17,7 +17,6 @@
     ruby_3_1
 
     # Dev
-    argocd
     azure-cli
     gh
     go
@@ -31,7 +30,6 @@
     minicom
     rustup
     terraform
-    tilt
     k9s
 
     # Mac Utilities
@@ -113,10 +111,8 @@
       "figma"
 
       # Mac Utilities
-      "alfred"
       "bartender"
       "contexts"
-      "flux"
       "hammerspoon"
       "karabiner-elements"
       "raycast"
@@ -139,7 +135,6 @@
       "enpass"
       "bitwarden"
       "forticlient-vpn"
-      "keeweb"
       "the-unarchiver"
       "balenaetcher"
     ];
