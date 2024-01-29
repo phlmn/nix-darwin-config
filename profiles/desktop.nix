@@ -90,6 +90,7 @@
       "mumble"
       "signal"
       "telegram"
+      "ferdium"
 
       # Dev
       "alacritty"
