@@ -24,6 +24,7 @@
     pre-commit
     gnupg
     awscli2
+    (pkgs.callPackage ../packages/kmerge.nix {})
 
     # Node.js
     nodejs-slim-18_x
