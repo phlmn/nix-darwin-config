@@ -84,7 +84,6 @@
       "discord"
       "jitsi-meet"
       "keybase"
-      "microsoft-teams"
       "mumble"
       "signal"
       "telegram"
