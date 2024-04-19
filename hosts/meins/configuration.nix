@@ -1,15 +1,18 @@
 { config, pkgs, lib, ... }:
 {
   imports = [
-    <home-manager/nix-darwin>
     ../../profiles/desktop.nix
     # ../../config/postgresql.nix
     ../../modules/syncthing-darwin.nix
   ];
 
+  nixpkgs.hostPlatform = "aarch64-darwin";
+
   # Use a custom configuration.nix location.
   # $ darwin-rebuild switch -I darwin-config=$HOME/.nixpkgs/hosts/meins/configuration.nix
   environment.darwinConfig = "$HOME/.nixpkgs/hosts/meins/configuration.nix";
+  networking.hostName = "Meins";
+  networking.computerName = "Meins";
 
   homebrew.brewPrefix = "/opt/homebrew/bin/";
 
