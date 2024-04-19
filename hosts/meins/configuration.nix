@@ -8,9 +8,6 @@
 
   nixpkgs.hostPlatform = "aarch64-darwin";
 
-  # Use a custom configuration.nix location.
-  # $ darwin-rebuild switch -I darwin-config=$HOME/.nixpkgs/hosts/meins/configuration.nix
-  environment.darwinConfig = "$HOME/.nixpkgs/hosts/meins/configuration.nix";
   networking.hostName = "Meins";
   networking.computerName = "Meins";
 
