@@ -4,7 +4,7 @@
     enable = true;
     syntaxHighlighting.enable = true;
     enableCompletion = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
 
     history = {
       size = 100000;

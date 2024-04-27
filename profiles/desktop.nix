@@ -117,7 +117,7 @@
       "raycast"
 
       # Making
-      "autodesk-fusion360"
+      "autodesk-fusion"
 
       # Media
       "spotify"
