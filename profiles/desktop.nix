@@ -116,9 +116,6 @@
       "karabiner-elements"
       "raycast"
 
-      # Making
-      "autodesk-fusion"
-
       # Media
       "spotify"
       "vlc"

@@ -33,6 +33,7 @@
   homebrew = {
     casks = [
       "kicad" # slow to install, so not in desktop profile
+      "autodesk-fusion"
     ];
   };
 }
