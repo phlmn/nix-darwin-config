@@ -130,7 +130,6 @@
       "appcleaner"
       "enpass"
       "bitwarden"
-      "forticlient-vpn"
       "the-unarchiver"
       "balenaetcher"
     ];
