@@ -57,6 +57,7 @@
       ../config/home-manager.nix
       ../config/home-manager/alacritty.nix
       ../config/home-manager/atuin.nix
+      ../config/home-manager/aerospace/default.nix
       ../config/home-manager/direnv.nix
       ../config/home-manager/fonts.nix
       ../config/home-manager/git.nix
