@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   services.postgresql = {
-    enable = true;
+    enable = false;
     package = pkgs.postgresql_13;
     dataDir = "/Users/phlmn/var/lib/postgresql/13";
   };
