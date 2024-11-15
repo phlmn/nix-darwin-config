@@ -36,6 +36,10 @@
         rebase = false;
       };
 
+      push = {
+        autoSetupRemote = true;
+      };
+
       diff = {
         external = "difft";
         tool = "nvimdiff";
