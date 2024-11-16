@@ -3,6 +3,7 @@
   imports = [
     ./base.nix
     ../config/homebrew.nix
+    ../config/aerospace.nix
   ];
 
   # List packages installed in system profile. To search by name, run:

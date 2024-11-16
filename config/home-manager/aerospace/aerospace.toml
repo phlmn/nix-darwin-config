@@ -160,8 +160,6 @@ alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
-# if.app-name-regex-substring = 'Code'
-# if.window-title-regex-substring = 'substring'
 if.workspace = '2'
 check-further-callbacks = true
 run = ['move-node-to-workspace 3']
