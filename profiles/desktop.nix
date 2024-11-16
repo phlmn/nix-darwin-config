@@ -68,6 +68,7 @@
       ../config/home-manager/vscode/default.nix
       ../config/home-manager/zsh.nix
       ../config/home-manager/fix-ctrl-cmd-down-bonk.nix
+      ../config/home-manager/keyboard-layout/default.nix
     ];
   };
 
@@ -114,7 +115,6 @@
       "bartender"
       "contexts"
       "hammerspoon"
-      "karabiner-elements"
       "raycast"
 
       # Media
