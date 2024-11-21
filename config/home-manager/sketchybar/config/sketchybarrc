@@ -16,7 +16,7 @@ bar_params=(
   padding_right=4
   color=$BAR_COLOR
 )
-sketchybar --bar "${bar[@]}"
+sketchybar --bar "${bar_params[@]}"
 
 default_params=(
   icon.font="SF Pro:Semibold:13.0"
