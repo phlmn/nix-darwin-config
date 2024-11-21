@@ -14,6 +14,10 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = []
 
+exec-on-workspace-change = ['/bin/bash', '-c',
+  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+]
+
 # Start AeroSpace at login
 start-at-login = false
 
@@ -46,7 +50,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
-# - Constant:     gaps.outer.top = 8
+# - Constant:     gaps.outer.top =
 # - Per monitor:  gaps.outer.top = [{ monitor.main = 16 }, { monitor."some-pattern" = 32 }, 24]
 #                 In this example, 24 is a default value when there is no match.
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
@@ -56,7 +60,7 @@ inner.horizontal = 0
 inner.vertical =   0
 outer.left =       0
 outer.bottom =     0
-outer.top =        0
+outer.top =        33
 outer.right =      0
 
 # 'main' binding mode declaration

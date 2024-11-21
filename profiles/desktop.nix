@@ -4,6 +4,7 @@
     ./base.nix
     ../config/homebrew.nix
     ../config/aerospace.nix
+    ../config/sketchybar.nix
   ];
 
   # List packages installed in system profile. To search by name, run:
@@ -65,6 +66,7 @@
       ../config/home-manager/hammerspoon/default.nix
       ../config/home-manager/neovim.nix
       ../config/home-manager/starship.nix
+      ../config/home-manager/sketchybar/default.nix
       ../config/home-manager/tmux.nix
       ../config/home-manager/vscode/default.nix
       ../config/home-manager/zsh.nix
@@ -134,6 +136,10 @@
       "bitwarden"
       "the-unarchiver"
       "balenaetcher"
+
+      # apple default fonts
+      "font-sf-pro"
+      "sf-symbols"
     ];
 
     masApps = {

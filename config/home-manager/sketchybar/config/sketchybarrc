@@ -1,0 +1,133 @@
+#!/bin/bash
+
+source "$CONFIG_DIR/colors.sh"
+
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+ITEM_DIR="$CONFIG_DIR/items"
+
+
+##### global settings #####
+
+bar_params=(
+  position=top
+  sticky=off
+  height=32
+  padding_left=4
+  padding_right=4
+  color=$BAR_COLOR
+)
+sketchybar --bar "${bar[@]}"
+
+default_params=(
+  icon.font="SF Pro:Semibold:13.0"
+  icon.color=$TEXT_COLOR
+  icon.padding_left=8
+  icon.padding_right=3
+  label.font="SF Pro:Semibold:13.0"
+  label.color=$TEXT_COLOR
+  label.padding_left=3
+  label.padding_right=8
+  background.color=$ITEM_BG_COLOR
+  background.corner_radius=5
+  background.height=24
+  padding_left=2
+  padding_right=2
+)
+sketchybar --default "${default_params[@]}"
+
+
+##### custom events #####
+
+sketchybar --add event aerospace_workspace_change
+
+
+##### left items #####
+
+for sid in $(aerospace list-workspaces --monitor 1); do
+  set_params=(
+    background.drawing=off
+    label.color=$TEXT_COLOR
+    label="$sid"
+    icon.padding_left=0
+    icon.padding_right=0
+    label.padding_left=4
+    label.padding_right=5
+    padding_left=1
+    padding_right=1
+    icon.padding_right=0
+    click_script="aerospace workspace $sid"
+    script="$CONFIG_DIR/plugins/aerospace.sh $sid"
+  )
+  sketchybar \
+    --add item space.$sid left \
+    --subscribe space.$sid aerospace_workspace_change \
+    --set space.$sid "${set_params[@]}"
+done
+
+set_params=(
+  icon.padding_left=0
+  icon.padding_right=0
+  label.padding_left=10
+  label.font="SF Pro:Bold:14.0"
+  label.color=$TEXT_COLOR2
+  background.color=$ACCENT_COLOR
+  padding_left=8
+  script="$PLUGIN_DIR/front_app.sh"
+)
+sketchybar \
+  --add item front_app left \
+  --set front_app "${set_params[@]}" \
+  --subscribe front_app front_app_switched
+
+
+##### right items #####
+
+sketchybar \
+  --add item clock right \
+  --set clock \
+    label.padding_left=10 \
+    icon.padding_right=0 \
+    icon.padding_left=0 \
+    background.drawing=off \
+    update_freq=10 \
+    script="$PLUGIN_DIR/clock.sh"
+
+sketchybar \
+  --add item volume right \
+  --set volume script="$PLUGIN_DIR/volume.sh" \
+  --subscribe volume volume_change
+
+sketchybar \
+  --add item battery right \
+  --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
+  --subscribe battery system_woke power_source_change
+
+sketchybar \
+  --add alias "Control Centre,WiFi" right \
+  --set "Control Centre,WiFi" \
+    label.padding_left=0 \
+    label.padding_right=0 \
+    icon.padding_left=0 \
+    icon.padding_right=0 \
+    padding_left=1
+
+sketchybar \
+  --add item cpu right \
+  --set cpu \
+    update_freq=2 \
+    icon=􀧓 \
+    script="$PLUGIN_DIR/cpu.sh"
+
+sketchybar \
+  --add item media right \
+  --set media \
+    label.color=$TEXT_COLOR \
+    label.max_chars=32 \
+    icon.color=$TEXT_COLOR \
+    icon=􀊕 \
+    script="$PLUGIN_DIR/media.sh" \
+  --subscribe media media_change
+
+
+##### Force all scripts to run the first time (never do this in a script) #####
+sketchybar --update
