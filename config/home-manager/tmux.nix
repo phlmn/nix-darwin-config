@@ -25,6 +25,10 @@
 
       # enable mouse support
       set -g mouse on
+
+      # fix wrong shell due to bug in tmux sensible (https://github.com/tmux/tmux/issues/4162#issuecomment-2412201969)
+      set -g default-command "$SHELL"
+
     '';
 
     plugins =
