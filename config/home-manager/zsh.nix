@@ -43,6 +43,8 @@
       export TERM='xterm-256color';
 
       export PATH="$PATH:/opt/homebrew/bin";
+
+      eval "$(${pkgs.zoxide}/bin/zoxide init zsh)"
     '';
 
     shellAliases = {

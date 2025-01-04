@@ -59,6 +59,7 @@
     zsh-autosuggestions
     zsh-nix-shell
     zsh-syntax-highlighting
+    zoxide
 
     # Tools
     iperf
