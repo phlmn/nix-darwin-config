@@ -31,7 +31,7 @@
     nodePackages.npm
     nodePackages.yarn
     nodePackages.pnpm
-    nodePackages.cdktf-cli
+    # nodePackages.cdktf-cli
 
     # Nix
     hydra-check
