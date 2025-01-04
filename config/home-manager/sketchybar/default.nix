@@ -3,6 +3,5 @@
 
   home.packages = [
     pkgs.sketchybar-app-font
-    pkgs.nerdfonts
   ];
 }
