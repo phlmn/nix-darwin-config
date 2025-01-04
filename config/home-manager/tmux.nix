@@ -29,6 +29,9 @@
       # fix wrong shell due to bug in tmux sensible (https://github.com/tmux/tmux/issues/4162#issuecomment-2412201969)
       set -g default-command "$SHELL"
 
+      set -g status-interval 5
+      set -g automatic-rename on
+      set -g automatic-rename-format '#{b:pane_current_path}'
     '';
 
     plugins =
