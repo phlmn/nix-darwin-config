@@ -11,12 +11,18 @@ ITEM_DIR="$CONFIG_DIR/items"
 bar_params=(
   position=top
   sticky=off
-  height=32
   padding_left=4
   padding_right=4
   color=$BAR_COLOR
 )
-sketchybar --bar "${bar_params[@]}"
+
+if [[ "$(hostname)" == "Philipps-MacBook-Pro-2.local" ]]; then
+  bar_height=40
+else
+  bar_height=32
+fi
+
+sketchybar --bar "${bar_params[@]}" height=$bar_height
 
 default_params=(
   icon.font="SF Pro:Semibold:13.0"
