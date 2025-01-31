@@ -53,9 +53,6 @@
         offset = {
           y = 3; # increase line height
         };
-
-        # If `true`, bold text is drawn using the bright color variants.
-        draw_bold_text_with_bright_colors = true;
       };
 
       # Colors (Gruvbox dark)
@@ -149,36 +146,28 @@
         ];
       };
 
-      # Mouse bindings
-      #
-      # Available fields:
-      #   - mouse
-      #   - action
-      #   - mods (optional)
-      #
-      # Values for `mouse`:
-      #   - Middle
-      #   - Left
-      #   - Right
-      #   - Numeric identifier such as `5`
-      #
-      # All available `mods` and `action` values are documented in the key binding
-      # section.
-      mouse_bindings = [
-        { mouse = "Middle"; action = "PasteSelection"; }
-      ];
-
       mouse = {
-        # Click settings
-        #
-        # The `double_click` and `triple_click` settings control the time
-        # alacritty should wait for accepting multiple clicks as one double
-        # or triple click.
-        double_click = { threshold = 300; };
-        triple_click = { threshold = 300; };
-
         # If this is `true`, the cursor is temporarily hidden when typing.
         hide_when_typing = true;
+
+        # Mouse bindings
+        #
+        # Available fields:
+        #   - mouse
+        #   - action
+        #   - mods (optional)
+        #
+        # Values for `mouse`:
+        #   - Middle
+        #   - Left
+        #   - Right
+        #   - Numeric identifier such as `5`
+        #
+        # All available `mods` and `action` values are documented in the key binding
+        # section.
+        bindings = [
+          { mouse = "Middle"; action = "PasteSelection"; }
+        ];
       };
 
       selection = {
