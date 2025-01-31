@@ -61,5 +61,6 @@
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
-  }
+  },
+  "workbench.iconTheme": "seti"
 }
