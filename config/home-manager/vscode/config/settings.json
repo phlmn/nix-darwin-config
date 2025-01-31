@@ -39,8 +39,7 @@
     "**/target": true
   },
   "terminal.integrated.scrollback": 20000,
-  "workbench.colorTheme": "GitHub Light",
-  "workbench.iconTheme": "seti",
+  "workbench.colorTheme": "GitHub Dark",
   "[python]": {
     "editor.formatOnType": false
   },

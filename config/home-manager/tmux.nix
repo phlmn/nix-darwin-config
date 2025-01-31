@@ -40,14 +40,6 @@
         tmuxPlugins.yank
         tmuxPlugins.open
         {
-          plugin = tmuxPlugins.resurrect;
-          extraConfig = "set -g @resurrect-capture-pane-contents on";
-        }
-        {
-          plugin = tmuxPlugins.continuum;
-          extraConfig = "set -g @continuum-restore on";
-        }
-        {
           plugin = tmuxPlugins.better-mouse-mode;
           extraConfig = ''
             set -g @scroll-speed-num-lines-per-scroll "1"
