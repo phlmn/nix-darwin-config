@@ -27,6 +27,8 @@
     kubectl
     kubernetes-helm
     kubectx
+    sops
+    age
     kubelogin
     lima
     minicom
@@ -56,7 +58,6 @@
     home.stateVersion = "22.05";
 
     imports = [
-      ../config/home-manager.nix
       ../config/home-manager/alacritty.nix
       ../config/home-manager/atuin.nix
       ../config/home-manager/aerospace/default.nix
