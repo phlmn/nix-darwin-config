@@ -36,6 +36,7 @@
     rustup
     terraform
     k9s
+    unixtools.procps # provides watch
 
     # Mac Utilities
     mas
