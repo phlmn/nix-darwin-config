@@ -29,6 +29,7 @@
     kubectx
     sops
     age
+    fluxcd
     kubelogin
     lima
     minicom
