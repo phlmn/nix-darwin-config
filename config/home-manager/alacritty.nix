@@ -2,6 +2,21 @@
   programs.alacritty = {
     enable = true;
     settings = {
+      general = {
+        live_config_reload = true;
+      };
+
+      terminal = {
+        shell = {
+          program = "zsh";
+          args = [
+            "--login"
+            "-c"
+            "tmux -u new-session -A -s 0-main"
+          ];
+        };
+      };
+
       window = {
         # Use window manager's recommended size
         dimensions = {
@@ -189,27 +204,6 @@
         # If this is `true`, the cursor will be rendered as a hollow box when the
         # window is not focused.
         unfocused_hollow = true;
-      };
-
-      # Live config reload (changes require restart)
-      live_config_reload = true;
-
-      # Shell
-      #
-      # You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
-      # Entries in `shell.args` are passed unmodified as arguments to the shell.
-      #
-      # Default:
-      #   - (macOS) /bin/bash --login
-      #   - (Linux) user login shell
-      #   - (Windows) powershell
-      shell = {
-        program = "zsh";
-        args = [
-          "--login"
-          "-c"
-          "tmux -u new-session -A -s 0-main"
-        ];
       };
 
       # Key bindings
