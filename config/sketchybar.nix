@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   services.sketchybar = {
-    enable = true;
+    enable = false;
 
     extraPackages = [
       pkgs.jq
