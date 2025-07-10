@@ -101,7 +101,7 @@
       "alacritty"
       "android-studio"
       "azure-data-studio"
-      "docker"
+      "docker-desktop"
       "insomnia"
       "intellij-idea"
       "postico"
