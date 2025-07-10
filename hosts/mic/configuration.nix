@@ -10,6 +10,8 @@
   # $ darwin-rebuild changelog
   system.stateVersion = 6;
 
+  system.primaryUser = "phlmn";
+
   nixpkgs.hostPlatform = "aarch64-darwin";
 
   # Use a custom configuration.nix location.
