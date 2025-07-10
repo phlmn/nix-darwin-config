@@ -8,14 +8,14 @@
 
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
-  system.stateVersion = 4;
+  system.stateVersion = 6;
+
+  system.primaryUser = "phlmn";
 
   nixpkgs.hostPlatform = "aarch64-darwin";
 
   networking.hostName = "Meins";
   networking.computerName = "Meins";
-
-  homebrew.brewPrefix = "/opt/homebrew/bin/";
 
   services.syncthing = {
     enable = true;
