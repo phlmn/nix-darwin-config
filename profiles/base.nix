@@ -21,7 +21,7 @@
     (pkgs.callPackage ../packages/kmerge.nix {})
 
     # Node.js
-    nodejs-slim_20
+    nodejs-slim_24
     nodePackages.npm
     nodePackages.yarn
     nodePackages.pnpm
