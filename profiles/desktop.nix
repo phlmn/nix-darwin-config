@@ -107,6 +107,7 @@
       "postico"
       "sublime-text"
       "visual-studio-code"
+      "zed"
 
       # Drivers etc.
       "logitech-options"
