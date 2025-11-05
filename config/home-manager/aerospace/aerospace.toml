@@ -15,7 +15,7 @@ after-login-command = []
 after-startup-command = []
 
 exec-on-workspace-change = ['/bin/bash', '-c',
-  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+  '/Users/phlmn/.config/aerospace/pip-move.sh',
 ]
 
 # Start AeroSpace at login
@@ -47,6 +47,11 @@ key-mapping.preset = 'qwerty'
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+[exec]
+inherit-env-vars = true
+[exec.env-vars]
+PATH = '/usr/bin:${HOME}/.nix-profile/bin:${PATH}'
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
