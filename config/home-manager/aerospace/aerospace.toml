@@ -172,3 +172,9 @@ if.app-id = 'com.microsoft.VSCode'
 if.workspace = '2'
 check-further-callbacks = true
 run = ['move-node-to-workspace 3']
+
+[[on-window-detected]]
+if.app-id = 'dev.zed.Zed'
+if.workspace = '2'
+check-further-callbacks = true
+run = ['move-node-to-workspace 3']
