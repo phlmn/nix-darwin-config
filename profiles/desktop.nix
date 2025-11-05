@@ -16,7 +16,7 @@
     # Databases
     postgresql_13
     redis
-    ruby_3_1
+    ruby_3_4
 
     # Dev
     azure-cli

@@ -12,7 +12,7 @@
     # Dev
     cloc
     git
-    gitAndTools.git-absorb
+    git-absorb
     git-crypt
     difftastic
     pre-commit
