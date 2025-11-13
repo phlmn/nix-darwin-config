@@ -21,4 +21,4 @@ hs.hotkey.bind({"cmd", "ctrl"}, "C", function()
 end)
 
 -- audio
-audio_control.enableNetworkVolumeControl('Sure USB DAC1   ')
+audio_control.enableNetworkVolumeControl('Sure USB DAC1')
