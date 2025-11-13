@@ -49,6 +49,7 @@
     openssl
 
     # Shell
+    bash
     zsh
     zsh-autosuggestions
     zsh-nix-shell
