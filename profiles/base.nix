@@ -47,6 +47,7 @@
     tree
     vim
     openssl
+    gnugrep
 
     # Shell
     bash
