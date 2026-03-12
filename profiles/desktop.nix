@@ -25,6 +25,7 @@
     httpie
     ktlint
     kubectl
+    kubelogin-oidc
     kubernetes-helm
     kubectx
     sops
