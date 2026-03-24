@@ -110,9 +110,6 @@
       "visual-studio-code"
       "zed"
 
-      # Drivers etc.
-      "logitech-options"
-
       # Graphics
       "drawio"
       "rawtherapee"
