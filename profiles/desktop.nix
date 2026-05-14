@@ -14,7 +14,7 @@
     syncthing
 
     # Databases
-    postgresql_13
+    postgresql_18
     redis
     ruby_3_4
 

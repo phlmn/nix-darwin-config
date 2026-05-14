@@ -1,10 +1,10 @@
 {
   description = "meins";
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.05-darwin";
-    nix-darwin.url = "github:nix-darwin/nix-darwin/nix-darwin-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261";
+    nix-darwin.url = "github:nix-darwin/nix-darwin/nix-darwin-25.11";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
-    home-manager.url = "github:nix-community/home-manager/release-25.05";
+    home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 

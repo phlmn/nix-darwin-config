@@ -1,24 +1,24 @@
 {
   "[graphql]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "editor.minimap.enabled": false,
   "files.exclude": {
@@ -26,7 +26,7 @@
     "**/.factorypath": true,
     "**/.idea": true,
     "**/.project": true,
-    "**/.settings": true
+    "**/.settings": true,
   },
   "markdown-preview-enhanced.breakOnSingleNewLine": false,
   "rust-analyzer.inlayHints.enable": false,
@@ -36,31 +36,43 @@
     "**/coverage": true,
     "**/dist": true,
     "**/node_modules": true,
-    "**/target": true
+    "**/target": true,
   },
   "terminal.integrated.scrollback": 20000,
   "workbench.colorTheme": "GitHub Dark",
   "[python]": {
-    "editor.formatOnType": false
+    "editor.formatOnType": false,
   },
   "python.autoComplete.extraPaths": ["__pypackages__/3.10/lib"],
   "python.analysis.extraPaths": [
     "__pypackages__/3.10/lib",
-    "__pypackages__/3.11/lib"
+    "__pypackages__/3.11/lib",
   ],
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[ruby]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "window.title": "${rootName}${separator}${profileName}${separator}${activeEditorShort}",
   "editor.inlineSuggest.enabled": true,
   "python.analysis.typeCheckingMode": "basic",
   "terminal.integrated.fontSize": 13,
   "eslint.format.enable": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
+  "workbench.iconTheme": "seti",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
   },
-  "workbench.iconTheme": "seti"
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://schema.tauri.app": true,
+  },
 }
