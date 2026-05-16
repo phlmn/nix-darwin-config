@@ -38,6 +38,7 @@
     terraform
     k9s
     unixtools.procps # provides watch
+    uv
 
     # Mac Utilities
     mas
