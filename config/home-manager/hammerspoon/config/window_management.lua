@@ -65,7 +65,30 @@ function toggleFullscreen()
     end
 end
 
+function addAppShortcut(key, name)
+  hs.hotkey.bind({"option"}, key, function()
+    app = hs.appfinder.appFromName(name)
+    windows = app:allWindows()
+
+
+    allHidden = true
+    for _, w in ipairs(windows) do
+      log.d(w)
+      if w:isVisible() then
+        allHidden = false
+      end
+    end
+
+    if allHidden then
+      windows[1]:unminimize()
+    end
+
+    app:activate()
+  end)
+end
+
 return {
     toggleCenter = toggleCenter,
-    toggleFullscreen = toggleFullscreen
+    toggleFullscreen = toggleFullscreen,
+    addAppShortcut = addAppShortcut
 }
