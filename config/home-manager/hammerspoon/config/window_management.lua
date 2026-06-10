@@ -68,6 +68,10 @@ end
 function addAppShortcut(key, name)
   hs.hotkey.bind({"option"}, key, function()
     app = hs.appfinder.appFromName(name)
+    if app == nil then
+      return
+    end
+
     windows = app:allWindows()
 
 
@@ -79,7 +83,7 @@ function addAppShortcut(key, name)
       end
     end
 
-    if allHidden then
+    if allHidden and windows[1] ~= nil then
       windows[1]:unminimize()
     end
 
