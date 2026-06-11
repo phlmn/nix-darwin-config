@@ -26,6 +26,9 @@ window_management.addAppShortcut("6", "Calendar")
 window_management.addAppShortcut("7", "Notion")
 window_management.addAppShortcut("8", "Mail")
 window_management.addAppShortcut("0", "Music")
+window_management.addAppShortcut("F", "Ferdium")
+window_management.addAppShortcut("T", "Telegram")
+window_management.addAppShortcut("W", "WhatsApp")
 
 
 -- audio
