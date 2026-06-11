@@ -3,7 +3,7 @@
   imports = [
     ./base.nix
     ../config/homebrew.nix
-    ../config/aerospace.nix
+    # ../config/aerospace.nix
     ../config/sketchybar.nix
   ];
 
@@ -19,7 +19,7 @@
     ruby_3_4
 
     # Dev
-    azure-cli
+    (azure-cli.withExtensions [ azure-cli.extensions.azure-devops ])
     gh
     go
     httpie
@@ -64,7 +64,7 @@
     imports = [
       ../config/home-manager/alacritty.nix
       ../config/home-manager/atuin.nix
-      ../config/home-manager/aerospace/default.nix
+      # ../config/home-manager/aerospace/default.nix
       ../config/home-manager/direnv.nix
       ../config/home-manager/fonts.nix
       ../config/home-manager/git.nix
@@ -85,6 +85,10 @@
       "platformio"
     ];
 
+    onActivation.extraFlags = [
+        "--force-cleanup"
+    ];
+
     casks = [
       # Browsers
       "firefox"
@@ -98,6 +102,9 @@
       "signal"
       "telegram"
       "ferdium"
+
+      # === tmp ===
+      "microsoft-teams"
 
       # Dev
       "alacritty"
