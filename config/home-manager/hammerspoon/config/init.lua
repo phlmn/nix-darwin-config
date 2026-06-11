@@ -20,7 +20,7 @@ end)
 -- app shortcuts
 window_management.addAppShortcut("1", "Firefox")
 window_management.addAppShortcut("2", "Alacritty")
-window_management.addAppShortcut("3", "Code")
+window_management.addAppShortcut("3", "Visual Studio Code")
 window_management.addAppShortcut("4", "Zed")
 window_management.addAppShortcut("6", "Calendar")
 window_management.addAppShortcut("7", "Notion")

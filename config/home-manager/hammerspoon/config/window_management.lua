@@ -67,27 +67,34 @@ end
 
 function addAppShortcut(key, name)
   hs.hotkey.bind({"option"}, key, function()
-    app = hs.appfinder.appFromName(name)
-    if app == nil then
-      return
-    end
+    hs.application.launchOrFocus(name)
+    -- app = hs.appfinder.appFromName(name)
+    -- if app == nil then
+    --   return
+    -- end
 
-    windows = app:allWindows()
+    -- windows = app:allWindows()
 
+    -- if windows[1] == nil then
+    --   hs.application.launchOrFocus(name)
+    --   -- menuItem = app:findMenuItem("New Window")
+    --   -- log.d(menuItem)
+    --   return
+    -- end
 
-    allHidden = true
-    for _, w in ipairs(windows) do
-      log.d(w)
-      if w:isVisible() then
-        allHidden = false
-      end
-    end
+    -- allHidden = true
+    -- for _, w in ipairs(windows) do
+    --   log.d(w)
+    --   if w:isVisible() then
+    --     allHidden = false
+    --   end
+    -- end
 
-    if allHidden and windows[1] ~= nil then
-      windows[1]:unminimize()
-    end
+    -- if allHidden and windows[1] ~= nil then
+    --   windows[1]:unminimize()
+    -- end
 
-    app:activate()
+    -- app:activate()
   end)
 end
 
