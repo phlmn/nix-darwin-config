@@ -21,10 +21,10 @@
     (pkgs.callPackage ../packages/kmerge.nix {})
 
     # Node.js
-    nodejs-slim_24
-    nodePackages.npm
-    nodePackages.yarn
-    nodePackages.pnpm
+    nodejs_24
+    # npm
+    yarn
+    pnpm
     # nodePackages.cdktf-cli
 
     # Nix

@@ -42,6 +42,7 @@
 
     plugins = with pkgs.vimPlugins; [
       {
+        type = "viml";
         plugin = gruvbox;
         config = ''
           " gruvbox configuration
