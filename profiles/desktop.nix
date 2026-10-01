@@ -19,7 +19,6 @@
     ruby_3_4
 
     # Dev
-    (azure-cli.withExtensions [ azure-cli.extensions.azure-devops ])
     gh
     go
     httpie
@@ -48,7 +47,7 @@
 
     # Tools
     ffmpeg
-    nodePackages.serve
+    serve
     rink
   ];
 
@@ -86,7 +85,7 @@
     ];
 
     onActivation.extraFlags = [
-        "--force-cleanup"
+      "--force-cleanup"
     ];
 
     casks = [
@@ -95,40 +94,26 @@
       "google-chrome"
 
       # Collab & Messaging
-      "discord"
       "jitsi-meet"
       "keybase"
       "mumble"
       "signal"
       "telegram"
       "ferdium"
-
-      # === tmp ===
-      "microsoft-teams"
+      "whatsapp"
 
       # Dev
       "alacritty"
-      "android-studio"
-      "azure-data-studio"
       "docker-desktop"
       "insomnia"
-      "intellij-idea"
       "postico"
       "sublime-text"
       "visual-studio-code"
       "zed"
 
-      # Graphics
-      "drawio"
-      "rawtherapee"
-      "sketch"
-      "figma"
-
       # Mac Utilities
-      "bartender"
       "contexts"
       "hammerspoon"
-      "raycast"
 
       # Media
       "spotify"
@@ -143,7 +128,6 @@
       # Tools
       "appcleaner"
       "enpass"
-      "bitwarden"
       "the-unarchiver"
       "balenaetcher"
 
